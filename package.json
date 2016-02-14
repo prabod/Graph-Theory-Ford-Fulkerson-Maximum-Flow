@@ -1,0 +1,28 @@
+{
+  "name": "graph-theory-ford-fulkerson",
+  "version": "1.0.0",
+  "description": "CFord-Fulkerson Algorithm for Maximum Flow Problem ",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabod/Graph-Theory-Ford-Fulkerson.git"
+  },
+  "keywords": [
+    "graph-theory",
+    "ford-fulkerson"
+  ],
+  "author": "Prabod Rathnayaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prabod/Graph-Theory-Ford-Fulkerson/issues"
+  },
+  "homepage": "https://github.com/prabod/Graph-Theory-Ford-Fulkerson/",
+  "devDependencies": {
+
+  },
+  "dependencies": {
+  }
+}
