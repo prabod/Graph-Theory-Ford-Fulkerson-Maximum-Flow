@@ -1,7 +1,5 @@
 'use strict'
 
-module.exports = fordFulkerson
-
 function bfs(rGraph, s, t, parent) {
     var visited = [];
     var queue = [];
@@ -29,7 +27,7 @@ function bfs(rGraph, s, t, parent) {
     return (visited[t] == true);
 }
 
-function fordFulkerson(graph, s, t) {
+module.exports.fordFulkerson = function(graph, s, t) {
       /* Create a residual graph and fill the residual graph
        with given capacities in the original graph as
        residual capacities in residual graph
@@ -43,7 +41,7 @@ function fordFulkerson(graph, s, t) {
     for (var u = 0; u < graph.length; u++) {
         var temp = [];
         for (v = 0; v < graph.length; v++) {
-            temp.push(u * v);
+            temp.push(graph[u][v]);
         }
         rGraph.push(temp);
     }

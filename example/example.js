@@ -19,4 +19,4 @@ var graph = [
 	]
 ];
 alert("The maximum possible flow is " +
-	fordFulkerson(graph, 0, 5));
+	fordFulkerson.fordFulkerson(graph, 0, 5));
