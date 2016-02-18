@@ -1,10 +1,10 @@
 {
   "name": "graph-theory-ford-fulkerson",
   "version": "1.0.0",
-  "description": "CFord-Fulkerson Algorithm for Maximum Flow Problem ",
+  "description": "Ford-Fulkerson Algorithm for Maximum Flow Problem",
   "main": "index.js",
   "scripts": {
-    
+    "test": "node test/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/prabod/Graph-Theory-Ford-Fulkerson/",
   "devDependencies": {
+    "tape": "^4.4.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
