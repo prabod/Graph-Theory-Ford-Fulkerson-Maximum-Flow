@@ -4,11 +4,26 @@
 
 ## Introduction
 
-*A very short explanation of the flow network problem goes here. Would be nice to include a quick link to wikpedia or other easily accessible reference material*
+*When a Graph Represent a Flow Network where every edge has a capacity. Also given that two vertices, source 's' and sink 't' in the graph, we can find the maximum possible flow from s to t with having following constraints:*
+1. Flow on an edge doesn't exceed the given edge capacity
+2. Incoming flow is equal to Outgoing flow for every vertex excluding sink and source
+
+## Algorithm
+
+1. Start with f(e) = 0 for all edge e ∈ E.
+2. Find an augmenting path P in the residual graph Gf .
+3. Augment flow along path P.
+4. Repeat until you get stuck.
 
 ## Example
 
-*A picture corresponding to the problem below would be outstanding*
+*Consider the following graph*
+
+<img src="/images/ford_fulkerson2.png">
+
+*Maximum possible flow in the given graph is 23*
+
+<img src="/images/ford_fulkerson11.png">
 
 ```javascript
 var fordFulkerson = require('graph-theory-ford-fulkerson');
@@ -32,9 +47,9 @@ console.log("The maximum possible flow is " +
 Compute the maximum flow in a flow network between source node `source` and sink node `sink`.
 
 **Arguments:**
-- `graph`: ...
-- `source`: ...
-- `sink`: ...
+- `graph`: The Graph which representing the flow network
+- `source`: source vertex
+- `sink`: sink vertex
 
 **Returns:** Returns a number representing the maximum flow. *Document failure modes here*
 
