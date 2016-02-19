@@ -19,11 +19,11 @@
 
 *Consider the following graph*
 
-<img src="/images/ford_fulkerson2.png">
+<img src="/images/ford_fulkerson11.png">
 
 *Maximum possible flow in the given graph is 23*
 
-<img src="/images/ford_fulkerson11.png">
+<img src="/images/ford_fulkerson2.png">
 
 ```javascript
 var fordFulkerson = require('graph-theory-ford-fulkerson');
