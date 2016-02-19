@@ -27,7 +27,7 @@ function bfs(rGraph, s, t, parent) {
     return (visited[t] == true);
 }
 
-module.exports.fordFulkerson = function(graph, s, t) {
+module.exports = function fordFulkerson(graph, s, t) {
       /* Create a residual graph and fill the residual graph
        with given capacities in the original graph as
        residual capacities in residual graph
