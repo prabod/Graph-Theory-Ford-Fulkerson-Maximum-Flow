@@ -1,4 +1,4 @@
-# graph-theory-ford-fulkerson
+# Graph-Theory-Ford-Fulkerson
 
 > Ford-Fulkerson Algorithm for Maximum Flow Problem
 
