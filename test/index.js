@@ -30,9 +30,9 @@ test('for invalid source or sink', function(t) {
     [ 0,  0,  0,  0,  0,  0 ]
   ];
 
-  t.throws(fordFulkerson(graph, 0, 6));
-  t.throws(fordFulkerson(graph, -1, 5));
-  t.throws(fordFulkerson(graph, 0, -1));
+  t.throws(function() {fordFulkerson(graph, 0, 6)});
+  t.throws(function() {fordFulkerson(graph, -1, 5)});
+  t.throws(function() {fordFulkerson(graph, 0, -1)});
   t.end()
 })
 test('for invalid graph which is not size of NxN ', function(t) {
@@ -45,13 +45,13 @@ test('for invalid graph which is not size of NxN ', function(t) {
     [ 0,  0,  0,  0,  0,  0 ]
   ];
 
-  t.throws(fordFulkerson(graph, 0, 5));
+  t.throws(function() {fordFulkerson(graph, 0, 5)});
   t.end();
 })
 
 test('for invalid graph which is not size of NxN ', function(t) {
   var graph = [];
 
-  t.throws(fordFulkerson(graph, 0, 5));
+  t.throws(function() {fordFulkerson(graph, 0, 5)});
   t.end();
 })
