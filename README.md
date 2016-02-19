@@ -43,7 +43,7 @@ console.log("The maximum possible flow is " +
 
 ## Usage
 
-#### `require('graph-theory-ford-fulkerson')( graph, source, sink )
+#### `require('graph-theory-ford-fulkerson')( graph, source, sink )`
 Compute the maximum flow in a flow network between source node `source` and sink node `sink`.
 
 **Arguments:**
@@ -51,7 +51,7 @@ Compute the maximum flow in a flow network between source node `source` and sink
 - `source`: source vertex
 - `sink`: sink vertex
 
-**Returns:** Returns a number representing the maximum flow. *Document failure modes here*
+**Returns:** Returns a number representing the maximum flow.
 
 ## License
 
