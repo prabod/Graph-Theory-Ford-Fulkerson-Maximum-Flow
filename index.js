@@ -37,9 +37,18 @@ module.exports = function fordFulkerson(graph, s, t) {
 	 is an edge. If rGraph[i][j] is 0, then there is
 	 not)
 	*/
+  if (s < 0 || t < 0 || s > graph.length-1 || t > graph.length-1){
+    throw new Error("Ford-Fulkerson-Maximum-Flow :: invalid sink or source");
+  }
+  if(graph.length === 0){
+    throw new Error("Ford-Fulkerson-Maximum-Flow :: invalid graph");
+  }
 	var rGraph = [];
 	for (var u = 0; u < graph.length; u++) {
 		var temp = [];
+    if(graph[u].length !== graph.length){
+      throw new Error("Ford-Fulkerson-Maximum-Flow :: invalid graph. graph needs to be NxN");
+    }
 		for (v = 0; v < graph.length; v++) {
 			temp.push(graph[u][v]);
 		}
