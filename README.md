@@ -6,6 +6,7 @@
 ## Introduction
 
 *When a Graph Represent a Flow Network where every edge has a capacity. Also given that two vertices, source 's' and sink 't' in the graph, we can find the maximum possible flow from s to t with having following constraints:*
+
 1. Flow on an edge doesn't exceed the given edge capacity
 2. Incoming flow is equal to Outgoing flow for every vertex excluding sink and source
 
