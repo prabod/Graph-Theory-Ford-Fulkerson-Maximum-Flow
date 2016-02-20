@@ -55,6 +55,10 @@ Compute the maximum flow in a flow network between source node `source` and sink
 
 **Returns:** Returns a number representing the maximum flow.
 
+## Installation
+
+	npm install graph-theory-ford-fulkerson
+
 ## License
 
 &copy; 2016 Prabod Rathnayaka. MIT License.
