@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prabod/Graph-Theory-Ford-Fulkerson.git"
+    "url": "git+https://github.com/prabod/Graph-Theory-Ford-Fulkerson-Maximum-Flow.git"
   },
   "keywords": [
     "graph-theory",
@@ -17,11 +17,12 @@
   "author": "Prabod Rathnayaka <prabod@rathnayaka.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prabod/Graph-Theory-Ford-Fulkerson/issues"
+    "url": "https://github.com/prabod/Graph-Theory-Ford-Fulkerson-Maximum-Flow/issues"
   },
-  "homepage": "https://github.com/prabod/Graph-Theory-Ford-Fulkerson/",
+  "homepage": "https://github.com/prabod/Graph-Theory-Ford-Fulkerson-Maximum-Flow/",
   "devDependencies": {
     "tape": "^4.4.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@prabod" }
 }
